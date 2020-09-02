@@ -1,0 +1,20 @@
+    <div class="w-100 my-2 mx-auto p-2 overflow-auto content">
+        <div class="d-flex justify-content-end p-1">
+            <button class="color-emerald d-flex">
+                <div class="gip-icon-add color-emerald mr-1"></div>
+                Создать
+            </button>
+        </div>
+        <div *ngFor="let item of storage.entryList; let first = first" class="w-100 mt-2 entry d-flex flex-column cursor-pointer">
+            <div class="d-flex justify-content-between bg-light">
+                <p class="mx-0 my-auto pl-1 font-bold">{{item.title}}</p>
+                <button class="color-pearl size-k05 my-auto">
+                    <div class="gip-icon-3dots color-pearl"></div>
+                </button>
+            </div>
+            <div class="d-flex p-1">
+                <p class="m-0 color-pearl">{{item.uuid}}</p>
+                <p class="m-0 color-pearl ml-2">{{item.create | momentDate}}</p>
+            </div>
+        </div>
+    </div>
