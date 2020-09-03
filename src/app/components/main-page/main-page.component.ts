@@ -22,13 +22,14 @@ export class MainPageComponent {
         //     assign: "7acb3a1b-5ded-4dab-bdee-3d52ddfc562e",
         //     create: Models.Functions.now(),
         //     update: Models.Functions.now(),
-        //     labels: [
+        //     tags: [
         //         "c4e1e9a9-57c1-458f-89df-a4fd5b415735",
         //         "a58df7c3-a6ad-4d15-94a1-d0d911cae2f3",
         //         "a0b5e250-cb2c-4ab1-8f65-67bbaba1ced6"
         //     ],
         //     title: "Вторая запись",
         //     text: "Текст второй записи"
+        //     relate: null
         // }).subscribe();
         this.db
             .readAll<Models.Types.IEntry>(Models.Data.Type.IEntry)
